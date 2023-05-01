@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 	pb "hulo/daemon/proto"
-	hi "hulo/sdk/go"
+	hi "hulo/interface"
 	"hulo/shell"
 	"time"
 

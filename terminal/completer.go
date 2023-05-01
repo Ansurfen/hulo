@@ -12,7 +12,7 @@ import (
 	lua "github.com/yuin/gopher-lua"
 	luar "layeh.com/gopher-luar"
 
-	hi "hulo/sdk/go"
+	hi "hulo/interface"
 )
 
 // Completer manage completion rules

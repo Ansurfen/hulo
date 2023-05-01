@@ -1,6 +1,6 @@
 syntax = "proto3";
 option go_package="./;hulo";
-option java_package = "hulo";
+option java_package = "proto";
 option csharp_namespace = "hulo";
 
 package Hulo;

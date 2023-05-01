@@ -21,7 +21,7 @@ func hsMountPlugin(term *HuloTerminal) error {
 			term.IO.WriteStdout(term.Logger.Error("fail to boot loader"))
 		}
 	}
-	term.VM.EvalFile("dd.lua")
+	term.VM.EvalFile("sdk.lua")
 	return nil
 }
 

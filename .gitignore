@@ -19,3 +19,8 @@
 
 # Go workspace file
 go.work
+
+/sdk/java/target/
+/sdk/dart/.dart_tool
+/sdk/python/__pycache__
+/sdk/js/node_modules
