@@ -1,0 +1,35 @@
+syntax = "proto3";
+option go_package="./;hulo";
+option java_package = "hulo";
+option csharp_namespace = "hulo";
+
+package Hulo;
+
+service HuloInterface {
+   rpc Completion (CompletionRequest) returns (CompletionResponse);
+   rpc Call (CallRequest) returns (CallResponse);
+}
+
+message CompletionRequest {
+    string str = 1;
+}
+
+message CompletionResponse {
+    repeated Suggest suggests = 1;
+}
+
+message Suggest {
+    string Text = 1;
+    string Description = 2;
+    bool Comment = 3;
+}
+
+message CallRequest {
+    string Func = 1;
+    string Arg = 2;
+}
+
+message CallResponse {
+    bool Ok = 1;
+    string Buf = 2;
+}

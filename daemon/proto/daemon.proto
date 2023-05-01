@@ -1,0 +1,31 @@
+syntax = "proto3";
+option go_package="./;proto";
+package proto;
+
+service HuloDaemon {
+    rpc Ping(PingRequest) returns (PingResponse) {}
+    rpc StartService(StartServiceRequest) returns (StartServiceResponse) {}
+    rpc CloseService(CloseServiceRequest) returns (CloseServiceResponse) {}
+}
+
+message PingRequest {
+}
+
+message PingResponse {
+}
+
+message StartServiceRequest {
+    string ServiceName = 1; // mysql, redis ...
+}
+
+message StartServiceResponse {
+    int32 port = 1;
+}
+
+message CloseServiceRequest {
+    string ServiceName = 1;
+}
+
+message CloseServiceResponse {
+
+}
